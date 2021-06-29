@@ -7,7 +7,6 @@
   --hero-footer: #2f303a;
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
-  --stroke-card-portfolio: #eeeeee;
   --contact-footer: rgba(255, 255, 255, 0.6);
   --card-set-gap: 30px;
 }
@@ -36,15 +35,15 @@ a {
   list-style-type: none;
   text-decoration: none;
 }
-/*body {
+body {
   font-family: var(--main-font)
   color: var(--gray-type);
   font-size: 14px;
   font-style: normal;
 }
-*/
-img {
-  display: block;
+
+.img {
+  display: inline-block
 }
 li {
   outline: 1px solid tomato;
@@ -137,7 +136,8 @@ li {
   padding-bottom: 200px;
 }
 .container-hero {
-  text-align: center;
+  width: 696px;
+  margin-bottom: 30px;
 }
 .hero-button {
   font-size: 16px;
@@ -211,9 +211,12 @@ li {
 /*=====================Footer=====================*/
 .footer {
   background-color: var(--hero-footer);
-  text-align: left;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
+  display: block;
+  margin-bottom: 20px;
   color: var(--back-color);
 }
 .addres {
