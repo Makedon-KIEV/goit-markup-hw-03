@@ -1,0 +1,205 @@
+:root {
+  --accent-color: #2196f3;
+  --back-color: #ffffff;
+  --text-color: #212121;
+  --black-black: #000000;
+  --gray-type: #757575;
+  --hero-footer: #2f303a;
+}
+ul,
+li,
+a {
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--gray-type);
+  font-size: 14px;
+  font-style: normal;
+}
+/*=====================Header==================*/
+.header {
+  width: 1600px;
+  background-color: var(--back-color);
+}
+.logo {
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--black-black);
+}
+.menu-item-link {
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.menu-item-link:hover,
+.menu-item-link:focus {
+  color: var(--accent-color);
+}
+.menu-item-link.current,
+.logo-blue {
+  color: var(--accent-color);
+}
+
+.cont-link {
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--gray-type);
+}
+.cont-link:hover,
+.cont-link:focus,
+.cont-link-map {
+  color: var(--accent-color);
+}
+
+/*=====================HERO=======================*/
+
+.hero {
+  background-color: var(--hero-footer);
+  color: var(--back-color);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1, 4;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero-button {
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--back-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.hero-button-go {
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--back-color);
+}
+
+/*=====================ABOUT======================*/
+
+.about-paragraph {
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.about-description {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--gray-type);
+}
+
+/*===================== What we do ==============*/
+.whatwedo {
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/*=====================Team=====================*/
+
+.team-list {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.team-list-name {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.team-list-position {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--gray-type);
+}
+
+/*=====================Footer=====================*/
+.footer {
+  background-color: var(--hero-footer);
+  text-align: left;
+}
+.logo-footer {
+  color: var(--back-color);
+}
+.addres {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--back-color);
+}
+.cont-link.map {
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.cont-link.map:hover,
+.cont-link.map:focus {
+  color: var(--accent-color);
+}
+/*========END FOOTER ==========*/
+/*========PORTFOLIO===========*/
+.gallery-portfolio {
+  color: var(--back-color);
+}
+/*========PORTFOLIO HERO======*/
+.nav-button {
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.nav-button:hover,
+.nav-button:focus,
+.nav-button.current {
+  background-color: var(--accent-color);
+  color: var(--back-color);
+  cursor: pointer;
+}
+
+/*===========GALLERY=====*/
+.portfolio-hidden {
+  color: var(--back-color);
+}
+.project-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+.project-type {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--gray-type);
+}
