@@ -13,6 +13,9 @@
   --paragraph-font-size: 16px;
   --paragraph-menu-font-size: 14px;
   --card-set-gap: 30px;
+  --shadow-one: rgba(0, 0, 0, 0.12);
+  --shadow-two: rgba(0, 0, 0, 0.14);
+  --shadow-three: rgba(0, 0, 0, 0.2);
   --shadow-hero-button: rgba(0, 0, 0, 0.15);
   --margin: 30px;
 }
@@ -228,6 +231,10 @@ margin-left: auto;
   text-transform: uppercase;
   color: var(--text-color); */
   
+}
+/* ============== ЕСЛИ УБРАТЬ СКОБКУ ПЛЫВЁТ whatwedoo============= */
+
+
 
 .about-item {
   /* width: 270px; */
@@ -307,21 +314,43 @@ margin: 0;
  .section-team {
   background-color: var(--widgets-link-background-color);
  }
-.team-list-name {
+.team-list-name
+.team-list-position {
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  margin-bottom: 10px;
 }
 .team-list-position {
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
+  font-weight: 400;
   letter-spacing: 0.03em;
+  margin-bottom: 0;
   color: var(--gray-type);
 }
-
+.team-list{
+  margin-bottom: 50px;
+}
+.team-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--margin));
+  margin-left: calc(-1 * var(--margin)); 
+}
+.team-list-wrapper {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-top: var(--margin);
+  margin-left: var(--margin);
+  background: var(--back-color);
+  
+  box-shadow: 0px 1px 3px var(--shadow-one), 0px 1px 1px var(--shadow-two),
+  0px 2px 1px var(--shadow-three);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-wrapper{
+  text-align: center;
+}
 /*=====================Footer=====================*/
 .footer {
   background-color: var(--hero-footer);
@@ -334,11 +363,14 @@ margin: 0;
   color: var(--back-color);
 }
 .addres {
-  font-style: normal;
+  font-style: inherit;
   font-size: 24px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--back-color);
+}
+.cont-link:not(:last-child) {
+  margin-bottom: 9px;
 }
 .cont-link.map {
   font-weight: 500;
@@ -355,6 +387,8 @@ margin: 0;
 .gallery-portfolio {
   color: var(--back-color);
 }
+
+
 /*========PORTFOLIO HERO======*/
 .nav-button {
   font-size: 16px;
