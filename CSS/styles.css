@@ -231,10 +231,6 @@ margin-left: auto;
   text-transform: uppercase;
   color: var(--text-color); */
   
-}
-/* ============== ЕСЛИ УБРАТЬ СКОБКУ ПЛЫВЁТ whatwedoo============= */
-
-
 
 .about-item {
   /* width: 270px; */
@@ -289,14 +285,13 @@ margin: 0;
     margin-bottom: 94px;
 }
 
-.whatwedoo-list{
+.whatwedo-list{
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--margin));
   margin-left: calc(-1 * var(--margin))
 }
-.whatwedoo-img {
-  
+.whatwedo-img {
   flex-basis: calc((100% - 3 * var(--margin)) / 3);
   margin-top: var(--margin);
   margin-left: var(--margin);
@@ -390,12 +385,35 @@ margin: 0;
 
 
 /*========PORTFOLIO HERO======*/
+.wiegets{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.widgets-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .nav-button {
+  font-family: inherit;
+  font-weight: 500px;
   font-size: 16px;
   line-height: 1.63;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.nav-button {
+  background-color: var(--widgets-link-background-color);
+  border-radius: 4px;
+  cursor: pointer;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: none;
+}
+
 .nav-button:hover,
 .nav-button:focus,
 .nav-button.current {
