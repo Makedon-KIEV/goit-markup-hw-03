@@ -13,6 +13,7 @@
   --paragraph-menu-font-size: 14px;
   --card-set-gap: 30px;
   --shadow-hero-button: rgba(0, 0, 0, 0.15);
+  --margin: 30px;
 }
 
 h1,
@@ -31,6 +32,7 @@ p {
 }
 .link {
   text-decoration: none;
+  /* color: inherit; */
 }
 
 ul,
@@ -69,23 +71,38 @@ li {
 }
 
 /* ==== navigation ==== */
-.header-section {
+.header-container {
   align-items: center;
   display: flex;
   padding-top: 0px;
   padding-bottom: 0px;
-  justify-content: space-between;
-  margin: none;
 }
 
 .header {
   border-bottom: 1px solid #ececec;
 }
+.hader-nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-item {
+margin-right: 50px;
+}
+.menu-item:last-child { 
+  margin-right: 0;
+}
 .menu-item-link {
   display: flex;
   align-items: center;
   align-content: center;
-  margin-right: 42px;
+}
+
+.cont {
+margin-left: auto;
 }
 
 /*=====================Header==================*/
@@ -107,13 +124,6 @@ li {
   color: var(--black-black);
   cursor: pointer;
 }
-.site-nav {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: 48px;
-}
-
 .menu-item-link {
   display: block;
   font-weight: 500;
@@ -133,9 +143,6 @@ li {
 }
 
 .cont-link {
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
   text-align: left;
   color: var(--gray-type);
 }
@@ -143,12 +150,6 @@ li {
 .cont-link:focus,
 .cont-link-map {
   color: var(--accent-color);
-}
-.cont {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: 48px;
 }
 /*=====================HERO=======================*/
 
@@ -165,17 +166,32 @@ li {
   width: 696px;
   margin-bottom: 30px;
 }
+.hero-face {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: var(--back-color);
+}
 .hero-button {
+  font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--back-color);
   background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--shadow-hero-button);
   border-radius: 4px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
 }
 .hero-button-go {
   font-size: 16px;
@@ -185,15 +201,50 @@ li {
   letter-spacing: 0.06em;
   color: var(--back-color);
 }
-
+/* =====================END HERO====================
 /*=====================ABOUT======================*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
-.about-paragraph {
-  line-height: 1.1;
+.about-list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: calc(-1 * var(--margin));
+  margin-left: calc(-1 * var(--margin));
+}
+
+ /*  line-height: 1.1;
+  letter-spacing: 0.03em; 
+  text-transform: uppercase;
+  color: var(--text-color); */
+  
+}
+
+.about-item {
+  /* width: 270px; */
+  flex-basis: calc((100% - 4 * var(--margin)) / 4);
+  margin-top: var(--margin);
+  margin-left: var(--margin);
+}
+/* .abiut-item:first-child {
+margin: 0;
+} */
+.about{
+  font-weight: 700;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--text-color);
+  margin-bottom: 10px;
 }
+
 .about-description {
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -201,6 +252,10 @@ li {
 }
 
 /*===================== What we do ==============*/
+.section-What-we-do{
+  padding-top: 0;
+}
+
 .whatwedo {
   font-size: 36px;
   line-height: 1.1;
