@@ -7,6 +7,7 @@
   --gray-type: #757575;
   --hero-footer: #2f303a;
   --widgets-link-background-color: #f5f4fa;
+  --border-card-content: #eeeeee;
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --contact-footer: rgba(255, 255, 255, 0.6);
@@ -36,7 +37,7 @@ p {
 }
 .link {
   text-decoration: none;
-  /* color: inherit; */
+  color: inherit;
 }
 
 ul,
@@ -57,10 +58,10 @@ img {
   display: block;
   max-width: 100%;
 }
-li {
+/* li {
   outline: 1px solid tomato;
 }
-
+ */
 /* ======= COMPONENTS ======== */
 .section {
   padding-top: 94px;
@@ -385,7 +386,7 @@ margin: 0;
 
 
 /*========PORTFOLIO HERO======*/
-.wiegets{
+.widgets{
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -396,12 +397,11 @@ margin: 0;
 
 .nav-button {
   font-family: inherit;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-color);
 }
 .nav-button {
   background-color: var(--widgets-link-background-color);
@@ -426,15 +426,44 @@ margin: 0;
 .portfolio-hidden {
   color: var(--back-color);
 }
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--margin));
+  margin-left: calc(-1 * var(--margin));
+}
+.projects-links,
+.projects-links:visited {
+  color: var(--text-color);
+}
+.projects-blocks {
+  flex-basis: calc(100% / 3 - var(--margin));
+  margin-top: var(--margin);
+  margin-left: var(--margin);
+}
+.projects-content{
+  padding: 20px 24px;
+  background: var(--back-color);
+  border-right: 1px solid var(--border-card-content);
+  border-bottom: 1px solid var(--border-card-content);
+  border-left: 1px solid var(--border-card-content);
+}
+
 .project-name {
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
   color: var(--text-color);
 }
 .project-type {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
+  color: var(--gray-type);
+}
+.projects-links,
+.projects-links:visited {
   color: var(--gray-type);
 }
