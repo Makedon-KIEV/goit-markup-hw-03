@@ -1,7 +1,7 @@
 :root {
   --accent-color: #2196f3;
   --back-color: #ffffff;
-  --border-line: #ececec
+  --border-line: #ececec;
   --text-color: #212121;
   --black-black: #000000;
   --gray-type: #757575;
@@ -86,6 +86,10 @@ img {
 
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: var(--back-color);
+  border-bottom: 1px solid var(--border-line);
 }
 .hader-nav {
   display: flex;
@@ -96,9 +100,9 @@ img {
   align-items: center;
 }
 .menu-item {
-margin-right: 50px;
+  margin-right: 50px;
 }
-.menu-item:last-child { 
+.menu-item:last-child {
   margin-right: 0;
 }
 .menu-item-link {
@@ -108,7 +112,7 @@ margin-right: 50px;
 }
 
 .cont {
-margin-left: auto;
+  margin-left: auto;
 }
 
 /*=====================Header==================*/
@@ -227,11 +231,10 @@ margin-left: auto;
   margin-left: calc(-1 * var(--margin));
 }
 
- /*  line-height: 1.1;
+/*  line-height: 1.1;
   letter-spacing: 0.03em; 
   text-transform: uppercase;
   color: var(--text-color); */
-  
 
 .about-item {
   /* width: 270px; */
@@ -242,7 +245,7 @@ margin-left: auto;
 /* .abiut-item:first-child {
 margin: 0;
 } */
-.about{
+.about {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -257,12 +260,11 @@ margin: 0;
 }
 
 /*===================== What we do ==============*/
-.section-what-we-do{
+.section-what-we-do {
   padding-top: 0;
 }
 
-.whatwedo
-.team-list {
+.whatwedo .team-list {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -277,20 +279,20 @@ margin: 0;
   margin-bottom: 50px;
 }
 .container-whatwedo {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 94px;
-    margin-bottom: 94px;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
-.whatwedo-list{
+.whatwedo-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--margin));
-  margin-left: calc(-1 * var(--margin))
+  margin-left: calc(-1 * var(--margin));
 }
 .whatwedo-img {
   flex-basis: calc((100% - 3 * var(--margin)) / 3);
@@ -307,17 +309,17 @@ margin: 0;
   color: var(--text-color);
 }
  */
- .section-team {
+.section-team {
   background-color: var(--widgets-link-background-color);
- }
-.team-list-name
-.team-list-position {
+}
+.team-list-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .team-list-position {
   font-weight: 400;
@@ -325,26 +327,37 @@ margin: 0;
   margin-bottom: 0;
   color: var(--gray-type);
 }
-.team-list{
-  margin-bottom: 50px;
+.team-list {
+  font-family: var(--font-family);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--back-text-color);
+  margin-bottom: 52px;
 }
 .team-list-item {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--margin));
-  margin-left: calc(-1 * var(--margin)); 
+  margin-left: calc(-1 * var(--margin));
 }
 .team-list-wrapper {
   flex-basis: calc(100% / 4 - 30px);
   margin-top: var(--margin);
   margin-left: var(--margin);
   background: var(--back-color);
-  
+  text-align: center;
   box-shadow: 0px 1px 3px var(--shadow-one), 0px 1px 1px var(--shadow-two),
-  0px 2px 1px var(--shadow-three);
+    0px 2px 1px var(--shadow-three);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list-wrapper{
+.team-text-wrapper {
+  background-color: var(--back-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-list-wrapper {
   text-align: center;
 }
 /*=====================Footer=====================*/
@@ -384,9 +397,8 @@ margin: 0;
   color: var(--back-color);
 }
 
-
 /*========PORTFOLIO HERO======*/
-.widgets{
+.widgets {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -441,8 +453,11 @@ margin: 0;
   margin-top: var(--margin);
   margin-left: var(--margin);
 }
-.projects-content{
-  padding: 20px 24px;
+.projects-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 24px;
   background: var(--back-color);
   border-right: 1px solid var(--border-card-content);
   border-bottom: 1px solid var(--border-card-content);
