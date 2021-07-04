@@ -6,6 +6,7 @@
   --black-black: #000000;
   --gray-type: #757575;
   --hero-footer: #2f303a;
+  --widgets-link-background-color: #f5f4fa;
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --contact-footer: rgba(255, 255, 255, 0.6);
@@ -51,6 +52,7 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
 }
 li {
   outline: 1px solid tomato;
@@ -226,7 +228,6 @@ margin-left: auto;
   text-transform: uppercase;
   color: var(--text-color); */
   
-}
 
 .about-item {
   /* width: 270px; */
@@ -252,28 +253,60 @@ margin: 0;
 }
 
 /*===================== What we do ==============*/
-.section-What-we-do{
+.section-what-we-do{
   padding-top: 0;
 }
 
-.whatwedo {
+.whatwedo
+.team-list {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.whatwedo {
+  font-family: var(--font-family);
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.container-whatwedo {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
 
+.whatwedoo-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--margin));
+  margin-left: calc(-1 * var(--margin))
+}
+.whatwedoo-img {
+  
+  flex-basis: calc((100% - 3 * var(--margin)) / 3);
+  margin-top: var(--margin);
+  margin-left: var(--margin);
+}
 /*=====================Team=====================*/
 
-.team-list {
+/* .team-list {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-
+ */
+ .section-team {
+  background-color: var(--widgets-link-background-color);
+ }
 .team-list-name {
   font-size: 16px;
   line-height: 1.18;
