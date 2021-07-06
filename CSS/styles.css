@@ -131,8 +131,11 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: left;
-  color: var(--black-black);
+  color: var(--accent-color);
   cursor: pointer;
+}
+.logo-black {
+  color: #000000;
 }
 .menu-item-link {
   display: block;
@@ -147,8 +150,7 @@ img {
 .menu-item-link:focus {
   color: var(--accent-color);
 }
-.menu-item-link.current,
-.logo-blue {
+.menu-item-link.current {
   color: var(--accent-color);
 }
 
@@ -167,22 +169,18 @@ img {
   background: var(--hero-footer);
   color: var(--back-color);
   text-align: center;
-  padding-right: auto;
-  padding-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.container-hero {
-  width: 696px;
-  margin-bottom: 30px;
-}
+/* .container-hero {
+  ???? этот класс нужен ??
+} */
 .hero-face {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
   color: var(--back-color);
 }
 .hero-button {
@@ -213,52 +211,45 @@ img {
 }
 /* =====================END HERO====================
 /*=====================ABOUT======================*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
-.about-list {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-top: calc(-1 * var(--margin));
-  margin-left: calc(-1 * var(--margin));
-}
-
-/*  line-height: 1.1;
-  letter-spacing: 0.03em; 
-  text-transform: uppercase;
-  color: var(--text-color); */
-
-.about-item {
-  /* width: 270px; */
-  flex-basis: calc((100% - 4 * var(--margin)) / 4);
-  margin-top: var(--margin);
-  margin-left: var(--margin);
-}
-/* .abiut-item:first-child {
-margin: 0;
-} */
-.about {
-  font-weight: 700;
+.about-paragraph {
+  font-family: var(--font-family);
+  font-size: var(--paragraph-menu-font-size);
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  color: var(--back-text-color);
 }
 
-.about-description {
-  line-height: 1.7;
+.description {
+  font-family: var(--font-family);
+  font-size: var(--paragraph-menu-font-size);
+  line-height: 1.71;
+  /* or 171% */
+
   letter-spacing: 0.03em;
-  color: var(--gray-type);
-}
 
+  color: var(--grey-text-color);
+}
+.about-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.about-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-flex-element {
+  width: 270px;
+}
+/*=====================END ABOUT======================*/
 /*===================== What we do ==============*/
 .section-what-we-do {
   padding-top: 0;
@@ -299,6 +290,7 @@ margin: 0;
   margin-top: var(--margin);
   margin-left: var(--margin);
 }
+/*=================END  What we do ==============*/
 /*=====================Team=====================*/
 
 /* .team-list {
@@ -319,7 +311,6 @@ margin: 0;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-  padding-bottom: 10px;
 }
 .team-list-position {
   font-weight: 400;
@@ -360,36 +351,31 @@ margin: 0;
 .team-list-wrapper {
   text-align: center;
 }
+/*===================END Team=====================*/
 /*=====================Footer=====================*/
-.footer {
-  background-color: var(--hero-footer);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.logo-footer {
-  display: block;
-  margin-bottom: 20px;
-  color: var(--back-color);
-}
-.addres {
-  font-style: inherit;
-  font-size: 24px;
-  line-height: 1.7;
+.address {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-size: var(--paragraph-menu-font-size);
+  line-height: 1.71;
+  /* or 171% */
   letter-spacing: 0.03em;
   color: var(--back-color);
 }
-.cont-link:not(:last-child) {
-  margin-bottom: 9px;
+.address-footer {
+  padding-bottom: 9px;
 }
-.cont-link.map {
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: var(--contact-footer);
+.mail-link-footer {
+  padding-bottom: 9px;
+  font-style: normal;
 }
-.cont-link.map:hover,
-.cont-link.map:focus {
-  color: var(--accent-color);
+.footer {
+  background: var(--hero-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-white {
+  color: var(--back-color);
 }
 /*========END FOOTER ==========*/
 /*========PORTFOLIO===========*/
