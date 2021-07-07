@@ -379,12 +379,12 @@ img {
   color: var(--back-color);
 }
 
-.cont-link {
+.cont-link-footer {
   text-align: left;
   color: var(--contact-footer);
 }
-.cont-link:hover,
-.cont-link:focus {
+.cont-link-footer:hover,
+.cont-link-footer:focus {
   color: var(--accent-color);
 }
 /*========END FOOTER ==========*/
